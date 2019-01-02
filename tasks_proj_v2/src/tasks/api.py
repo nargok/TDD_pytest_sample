@@ -125,3 +125,7 @@ def stop_tasks_db():  # type: () -> None
     global _tasksdb
     _tasksdb.stop_tasks_db()
     _tasksdb = None
+
+def get_single():
+  """Return the first, utmost urgent Task object."""
+  return list_tasks()[-1] # 何でもいいのでタスクを1つ返す
