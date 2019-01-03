@@ -132,5 +132,11 @@ def get_single():
 
 def get_most_urgent():
   """Return the first, utmost urgent Task object."""
-  return sorted(list_tasks(), key=lambda t: t.id)[0] # id順で最初のものを返す
+  all_tasks = list_tasks()
+  filtered = []
+  for task in all_tasks:
+    if not task.done:
+      filtered.append(task)
+
+  return sorted(filtered, key=lambda t: t.id)[0] # id順で最初のものを返す
 

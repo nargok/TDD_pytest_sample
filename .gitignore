@@ -94,3 +94,5 @@ db.sqlite3
 venv/
 tasks_proj_v2/src/tasks/__pycache__/*
 tasks_proj_v2/tests/func/.*
+tasks_proj_v2/src/tasks/.*
+
