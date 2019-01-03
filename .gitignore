@@ -93,5 +93,4 @@ db.sqlite3
 .idea
 venv/
 tasks_proj_v2/src/tasks/__pycache__/*
-*.pyc
-
+tasks_proj_v2/tests/func/.*
