@@ -14,6 +14,7 @@ from .api import (  # noqa: F401
     start_tasks_db,
     stop_tasks_db,
     get_single,
+    get_most_urgent,
 )
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'

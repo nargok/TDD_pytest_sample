@@ -129,3 +129,8 @@ def stop_tasks_db():  # type: () -> None
 def get_single():
   """Return the first, utmost urgent Task object."""
   return list_tasks()[-1] # 何でもいいのでタスクを1つ返す
+
+def get_most_urgent():
+  """Return the first, utmost urgent Task object."""
+  return list_tasks()[-1]
+
