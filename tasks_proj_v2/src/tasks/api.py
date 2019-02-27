@@ -132,12 +132,9 @@ def get_single():
 
 def get_most_urgent():
   """Return the first, utmost urgent Task object."""
-  # 内包記法で分割して書く
-  # filtered = [task for task in list_tasks() if not task.done]
-  # return sorted(filtered, key=lambda t: t.id)[0]
+  filtered = [t for t in list_tasks() if not t.done ]
 
-  # さらに合成する
-  return sorted(
-    [task for task in list_tasks() if not task.done],
-  key=lambda t: t.id)[0]
+  if not filtered:
+    return None
 
+  return sorted(filtered, key=lambda t: t.id)[0]

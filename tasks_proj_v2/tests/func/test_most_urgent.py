@@ -17,3 +17,6 @@ def test_get_most_urgent_only_in_not_done(tasks_db):
   assert urgent_task.summary == 'Eat'
 
 
+def test_get_most_urgent_when_none(tasks_db):
+  urgent_task = tasks.get_most_urgent()
+  assert urgent_task is None
